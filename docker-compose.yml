@@ -1,0 +1,11 @@
+services:
+  php:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: zf1-migration:latest
+    container_name: zf1-migration
+    working_dir: /app
+    volumes:
+      - .:/app
+      - /tmp:/tmp
